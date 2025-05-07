@@ -30,16 +30,16 @@
 // console.log(twoSum[i,j]);
 
 
-
-let l1=[2,3,4,5]
-let l2=[6,7,8,9]
-let sum=(l1,l2)=>{
-   for (let i = 0; i < l1.length; i++) {
-    for (let j = 0; j < l2.length; j++) {
-        console.log([i+j]);
+const chknmr=(x)=>{
+    let v1=x.toString()
+    let v2=v1.split('').reverse().join()
+    if(v1=v2){
+        return true;
         
-        
+    }else{
+        return false;
     }
-    
-   }
+
 }
+
+console.log(chknmr(202));
